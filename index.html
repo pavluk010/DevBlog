@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DevBlog — Павлюк Олександр | Frontend Developer</title>
+  <meta name="description" content="Блог про HTML, CSS і JavaScript. Ділюсь реальним досвідом навчання у веб-розробці.">
+
+  <!-- Google Fonts: Inter + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Навігація -->
+<header class="header">
+  <nav class="nav">
+    <div class="container nav__inner">
+
+      <!-- Логотип -->
+      <a href="#home" class="nav__logo">
+        <div class="nav__logo-icon" aria-hidden="true"></></div>
+        <span class="nav__logo-text">Dev<span>Blog</span></span>
+      </a>
+
+      <!-- Посилання (desktop) -->
+      <ul class="nav__links">
+        <li><a href="#home" class="nav__link active">Головна</a></li>
+        <li><a href="#posts" class="nav__link">Статті</a></li>
+        <li><a href="#skills" class="nav__link">Навички</a></li>
+        <li><a href="#contact" class="nav__link">Контакти</a></li>
+      </ul>
+
+      <!-- CTA-кнопка -->
+      <a href="#contact" class="nav__cta">Зв'язатись ✉️</a>
+
+    </div>
+  </nav>
+</header>
+
+  <!-- Головна секція -->
+  <main>
+    <section class="hero" id="home">
+  <div class="container hero__inner">
+
+    <!-- Текстова частина -->
+    <div class="hero__content">
+
+      <!-- Бейдж з мигаючим статусом -->
+      <div class="hero__badge">
+        <span class="hero__status-dot" aria-hidden="true"></span>
+        Відкритий до пропозицій
+      </div>
+
+      <!-- Заголовок -->
+      <h1 class="hero__title">
+        Привіт, я <span class="hero__name">Павлюк Олександр</span>
+        <span class="hero__role">Frontend Developer</span>
+      </h1>
+
+      <p class="hero__desc">
+        Пишу про HTML, CSS, JavaScript і те що дізнаюсь у процесі навчання.
+        Ділюсь реальним досвідом — без зайвої теорії.
+      </p>
+
+      <!-- Кнопки -->
+      <div class="hero__btns">
+        <a href="#posts" class="btn btn--primary">📝 Читати статті</a>
+        <a href="#contact" class="btn btn--outline">💬 Написати мені</a>
+      </div>
+
+      <!-- Статистика -->
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-val">24</span>
+          <span class="hero__stat-label">статті</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-val">8 міс</span>
+          <span class="hero__stat-label">у розробці</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-val">6</span>
+          <span class="hero__stat-label">проєктів</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Термінал-картка -->
+    <div class="terminal" aria-hidden="true">
+      <div class="terminal__header">
+        <div class="terminal__dots">
+          <span style="background:#ff5f57"></span>
+          <span style="background:#febc2e"></span>
+          <span style="background:#28c840"></span>
+        </div>
+        <span class="terminal__title">about-me.json</span>
+      </div>
+      <div class="terminal__body">
+        <div class="terminal__line">
+          <span class="t-prompt">→</span>
+          <span class="t-cmd">cat about-me.json</span>
+        </div>
+        <pre class="t-json">{
+  <span class="t-key">"name"</span>: <span class="t-str">"Павлюк Олександр"</span>,
+  <span class="t-key">"role"</span>: <span class="t-str">"Frontend Developer"</span>,
+  <span class="t-key">"stack"</span>: [<span class="t-str">"HTML"</span>, <span class="t-str">"CSS"</span>, <span class="t-str">"JS"</span>],
+  <span class="t-key">"open_to_work"</span>: <span class="t-bool">true</span>,
+  <span class="t-key">"location"</span>: <span class="t-str">"Київ 🇺🇦"</span>
+}</pre>
+        <div class="terminal__line">
+          <span class="t-prompt">→</span>
+          <span class="terminal__cursor"></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- HTML -->
+<section class="posts" id="posts">
+  <div class="container">
+
+    <div class="section-header">
+      <h2 class="section-title">Останні <span>статті</span></h2>
+      <a href="#" class="section-link">Всі статті →</a>
+    </div>
+
+    <div class="posts-grid">
+
+      <!-- Картка статті -->
+      <article class="post-card">
+        <!-- Фонове зображення (градієнт + emoji) -->
+        <div class="post-card__img" style="background: linear-gradient(135deg, #0c4a6e, #1d4ed8)">
+          <span aria-hidden="true">🎨</span>
+        </div>
+        <div class="post-card__body">
+          <span class="post-tag post-tag--css">CSS</span>
+          <h3 class="post-card__title">
+            Як я навчився Tailwind за тиждень і чому не хочу повертатись до CSS
+          </h3>
+          <p class="post-card__excerpt">
+            Розбираю utility-first підхід на реальному прикладі.
+          </p>
+          <div class="post-card__meta">
+            <time>14 берез. 2025</time>
+            <span>2 дні тому. Читати</span>
+          </div>
+        </div>
+      </article>
+
+       <article class="post-card">
+        <!-- Фонове зображення (градієнт + emoji) -->
+        <div class="post-card__img" style="background: linear-gradient(135deg, #451a03, #d97706)">
+          <span aria-hidden="true">🏆</span>
+        </div>
+        <div class="post-card__body">
+          <span class="post-tag post-tag--css">JavaScript</span>
+          <h3 class="post-card__title">
+           EvenLoop на кухні
+          </h3>
+          <p class="post-card__excerpt">
+            Розбираю utility-first підхід на реальному прикладі.
+          </p>
+          <div class="post-card__meta">
+            <time>12 кв. 2025</time>
+            <span>3 хв тому. Читати</span>
+          </div>
+        </div>
+      </article>
+
+
+
+       <article class="post-card">
+        <!-- Фонове зображення (градієнт + emoji) -->
+        <div class="post-card__img" style="background: linear-gradient(135deg, #052e16, #16a34a)">
+          <span aria-hidden="true">🚀</span>
+        </div>
+        <div class="post-card__body">
+          <span class="post-tag post-tag--css">CSS</span>
+          <h3 class="post-card__title">
+            LightHouse з 46 до 96
+          </h3>
+          <p class="post-card__excerpt">
+            Розбираю utility-first підхід на реальному прикладі.
+          </p>
+          <div class="post-card__meta">
+            <time>8 вер. 2025</time>
+            <span>2 год тому. Читати</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Ще 2 картки... -->
+
+    </div>
+  </div>
+</section>
+
+    <section class="skills" id="skills"></section>
+    <section class="contact" id="contact"></section>
+  </main>
+
+  <footer class="footer"></footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>
