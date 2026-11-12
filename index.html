@@ -200,11 +200,140 @@
   </div>
 </section>
 
-    <section class="skills" id="skills"></section>
-    <section class="contact" id="contact"></section>
+    <section class="skills" id="skills">
+  <div class="container">
+
+    <h2 class="section-title">Мій <span>стек</span></h2>
+
+    <div class="skills__grid">
+
+      <!-- Ліва колонка: Frontend -->
+      <div>
+        <h3 class="skills__group-title">Frontend</h3>
+
+        <!-- Один прогрес-бар -->
+        <div class="skill-item">
+          <div class="skill-item__header">
+            <span>HTML5 / Семантика</span>
+            <span class="skill-item__pct">90%</span>
+          </div>
+          <div class="skill-bar">
+            <!-- width через style — щоб CSS transition міг анімувати -->
+            <div class="skill-bar__fill skill-bar__fill--blue" style="width: 90%"></div>
+          </div>
+        </div>
+
+        <!-- Повторюємо для: CSS/SCSS 85%, JS 70%, Bootstrap/Tailwind 80% -->
+      </div>
+
+      <!-- Права колонка: Інструменти -->
+      <div>
+        <h3 class="skills__group-title">Інструменти</h3>
+        <!-- Git 75%, Figma 65%, DevTools 78%, React 30% (навчаюсь) -->
+      </div>
+
+    </div>
+
+    <!-- Tech-теги -->
+    <div class="skills__tags">
+      <span class="tech-tag">HTML5</span>
+      <span class="tech-tag">CSS3</span>
+      <span class="tech-tag">SCSS</span>
+      <span class="tech-tag">JavaScript</span>
+      <span class="tech-tag">Bootstrap 5</span>
+      <span class="tech-tag">Tailwind CSS</span>
+      <span class="tech-tag">Git</span>
+      <span class="tech-tag">GitHub Pages</span>
+      <span class="tech-tag">Figma</span>
+    </div>
+
+  </div>
+</section>
+    <section class="contact" id="contact">
+  <div class="container">
+
+    <h2 class="section-title" style="margin-bottom:36px">Написати <span>мені</span></h2>
+
+    <div class="contact__grid">
+
+      <!-- Ліворуч: інформація -->
+      <div class="contact__info">
+        <h3>Відкритий до співпраці</h3>
+        <p>Шукаю стажування або першу роботу у веб-розробці.
+          Також відповідаю на питання про навчання і перший досвід у професії.</p>
+
+        <div class="contact__links">
+          <a href="https://github.com/pavluk010?tab=repositories" class="contact__link" target="_blank" rel="noopener">
+            <span class="contact__link-icon" style="background:#24292e">🐙</span>
+           My GitHub: pavluk010
+          </a>
+          <a href="https://t.me/YOUR" class="contact__link" target="_blank" rel="noopener">
+            <span class="contact__link-icon" style="background:#229ed9">✈️</span>
+            @cesh_ka0100
+          </a>
+          <a href="mailto:your@email.com" class="contact__link">
+            <span class="contact__link-icon" style="background:#1a1a2e">📧</span>
+            dfgpavluk9@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <!-- Праворуч: форма -->
+      <div class="contact__form-wrap">
+        <form class="contact__form" id="contactForm">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="fname">Ім'я</label>
+              <input class="form-input" id="fname" type="text" placeholder="Твоє ім'я" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="femail">Email</label>
+              <input class="form-input" id="femail" type="email" placeholder="email@example.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fsubject">Тема</label>
+            <input class="form-input" id="fsubject" type="text" placeholder="Про що хочеш написати?">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="fmessage">Повідомлення</label>
+            <textarea class="form-textarea" id="fmessage" placeholder="Напиши тут..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--submit">
+            Надіслати повідомлення →
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
   </main>
 
-  <footer class="footer"></footer>
+  <!-- HTML -->
+<footer class="footer">
+  <div class="container footer__inner">
+
+    <a href="#home" class="nav__logo">
+      <div class="nav__logo-icon" aria-hidden="true"></div>
+      <span class="nav__logo-text">Dev<span>Blog</span></span>
+    </a>
+
+    <p class="footer__copy">© 2025 [Твоє Ім'я] · Зроблено з ❤️ і VS Code</p>
+
+    <nav class="footer__links" aria-label="Footer navigation">
+      <a href="#home">Головна</a>
+      <a href="#posts">Статті</a>
+      <a href="https://github.com/YOUR" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+
+  </div>
+</footer>
 
   <script src="./script.js" defer></script>
 </body>
